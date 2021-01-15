@@ -1,6 +1,6 @@
 {
   "name": "@midwayjs/mininm",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Minimal node_modules",
   "main": "dist/index",
   "typings": "dist/index.d.ts",

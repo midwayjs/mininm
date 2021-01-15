@@ -1,4 +1,10 @@
-const args = process.argv.slice(2);
+let args = process.argv.slice(2);
+const mininmIndex = args.findIndex(arg => {
+  return arg === 'mininm';
+});
+if (mininmIndex !== -1) {
+  args = args.slice(mininmIndex + 1);
+}
 const mod = args[0] || 'fd';
 const otherPattern = args[1] || '';
 const { removeUselessFiles, removeUselessDirs } = require('../dist');
