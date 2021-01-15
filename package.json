@@ -1,0 +1,39 @@
+{
+  "name": "@midwayjs/mininm",
+  "version": "1.0.0",
+  "description": "Minimal node_modules",
+  "main": "dist/index",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "midway-bin build -c",
+    "test": "midway-bin test --ts --forceExit",
+    "cov": "midway-bin cov --ts --forceExit",
+    "ci": "npm run test"
+  },
+  "keywords": [
+    "midway",
+    "minimal",
+    "node_modules"
+  ],
+  "files": [
+    "bin",
+    "dist/**/*.js",
+    "dist/**/*.d.ts"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@midwayjs/cli": "^1.0.0",
+    "@types/jest": "^26.0.0",
+    "@types/node": "^14.14.21",
+    "mwts": "^1.1.2"
+  },
+  "dependencies": {
+    "fs-extra": "^9.0.1",
+    "globby": "^11.0.2"
+  },
+  "author": "echosoar <82163514@qq.com>",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/midwayjs/mininm.git"
+  }
+}
